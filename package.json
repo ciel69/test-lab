@@ -2,7 +2,7 @@
   "name": "test-lab",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://ciel69.github.io/test-lab",
+  "homepage": "http://ciel69.github.io/test-lab",
   "dependencies": {
     "@material/react-material-icon": "^0.15.0",
     "@material/react-menu": "^0.15.0",
@@ -26,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "redux-devtools": "^3.5.0"
   }
 }
