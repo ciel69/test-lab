@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-lab/static/css/main.4c0a1749.chunk.css",
+    "main.js": "/test-lab/static/js/main.9d43a35c.chunk.js",
+    "main.js.map": "/test-lab/static/js/main.9d43a35c.chunk.js.map",
+    "runtime-main.js": "/test-lab/static/js/runtime-main.ceee7b5b.js",
+    "runtime-main.js.map": "/test-lab/static/js/runtime-main.ceee7b5b.js.map",
+    "static/css/2.4c33dc2c.chunk.css": "/test-lab/static/css/2.4c33dc2c.chunk.css",
+    "static/js/2.4fafa0c8.chunk.js": "/test-lab/static/js/2.4fafa0c8.chunk.js",
+    "static/js/2.4fafa0c8.chunk.js.map": "/test-lab/static/js/2.4fafa0c8.chunk.js.map",
+    "index.html": "/test-lab/index.html",
+    "precache-manifest.1a3212c9d83e8a905ecd8f9cc846cedb.js": "/test-lab/precache-manifest.1a3212c9d83e8a905ecd8f9cc846cedb.js",
+    "service-worker.js": "/test-lab/service-worker.js",
+    "static/css/2.4c33dc2c.chunk.css.map": "/test-lab/static/css/2.4c33dc2c.chunk.css.map",
+    "static/css/main.4c0a1749.chunk.css.map": "/test-lab/static/css/main.4c0a1749.chunk.css.map",
+    "static/media/fonts.scss": "/test-lab/static/media/ArialRegular.d50bde08.eot",
+    "static/media/custom-bootstrap.scss": "/test-lab/static/media/MaterialIcons-Regular.d120c85b.ttf",
+    "static/media/bg-header.png": "/test-lab/static/media/bg-header.69e843a0.png",
+    "static/media/style.scss": "/test-lab/static/media/close.9deaffbb.svg",
+    "static/media/icon.svg": "/test-lab/static/media/icon.4a3cf183.svg",
+    "static/media/pc.png": "/test-lab/static/media/pc.1395b5c9.png"
+  }
+}
