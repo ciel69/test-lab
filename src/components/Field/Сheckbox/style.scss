@@ -1,0 +1,54 @@
+@import "../../../assets/scss/variables";
+
+$nameComponent: 'custom-check';
+
+.#{$nameComponent} {
+  color: $tcGrey;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: -7px;
+
+  span {
+    padding-left: 5px;
+    line-height: 18px;
+    float: left;
+
+    @include onlyIE {
+      padding-left: 3px;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    margin: 0;
+  }
+
+  &__indicate {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    float: left;
+    background-color: $cGrey;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    &.active {
+      background-color: $cBlue;
+    }
+  }
+
+  &.error-field {
+    color: $cRed;
+
+    .#{$nameComponent} {
+      &__indicate {
+        border-color: $cRed;
+      }
+    }
+  }
+}

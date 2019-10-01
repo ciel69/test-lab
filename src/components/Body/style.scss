@@ -1,0 +1,7 @@
+$componentName: 'body';
+
+.app {
+  &__#{$componentName} {
+    margin-top: 75px;
+  }
+}

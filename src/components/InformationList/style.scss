@@ -1,0 +1,93 @@
+@import "../../assets/scss/variables";
+
+$componentName: 'information-list';
+
+$sizeCounter: 30px;
+
+.app .#{$componentName} {
+  background-color: $cGrey;
+  margin-top: 75px;
+  padding-bottom: 75px;
+
+  &__title {
+    color: $cBlue;
+    font-family: "ArialBold";
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  &__image {
+    margin-left: 15px;
+    margin-top: -35px;
+    max-width: 100%;
+
+    @media (max-width: 1199px) {
+      padding-right: 25px;
+    }
+  }
+
+  ol {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 40px;
+  }
+
+  ol li {
+    margin: 0 0 20px 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+    font-family: "ArialBold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $cBlue;
+    cursor: pointer;
+
+    &:last-child {
+      span:after {
+        display: none;
+      }
+    }
+
+    span {
+      position: relative;
+      @media (max-width: 575px) {
+        position: initial;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 99%;
+        height: 1px;
+        background-color: $tcGrey;
+
+        @media (max-width: 575px) {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+  ol li::before {
+    font-family: "ArialBold";
+    font-size: 18px;
+    font-weight: 400;
+    content: counter(my-awesome-counter);
+    color: $cGrey;
+    position: absolute;
+    left: calc(-1 * 30px - 10px);
+    line-height: $sizeCounter;
+    width: $sizeCounter;
+    height: $sizeCounter;
+    top: 0;
+    background: $cBlue;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #999;
+  }
+}

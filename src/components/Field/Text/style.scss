@@ -1,0 +1,110 @@
+@import "../../../assets/scss/variables";
+
+.app {
+  .custom-field {
+    border: 0;
+    background-color: transparent !important;
+    height: auto;
+
+    &::after,
+    &::before {
+      background-color: transparent !important;
+    }
+
+    select,
+    input {
+      background: $cGrey;
+      border: 1px solid;
+      border-color: transparent !important;
+      border-radius: 3px;
+      height: 50px;
+      padding-left: 10px;
+    }
+
+    &.error-field {
+      select,
+      input {
+        border-color: $cRed !important;
+        color: $cRed !important;
+      }
+
+      .mdc-floating-label {
+        color: $cRed !important;
+      }
+
+      .material-icons {
+        color: $cRed !important;
+      }
+    }
+
+    &.valid-field {
+      select,
+      input {
+        border-color: $cBlue !important;
+        color: $cBlue !important;
+      }
+    }
+
+    .mdc-select__dropdown-icon {
+      top: 12px;
+    }
+
+    .material-icons {
+      top: 12px;
+      color: $cBlue !important;
+    }
+
+    .mdc-line-ripple {
+      display: none !important;
+    }
+
+    .mdc-line-ripple {
+      background-color: transparent;
+    }
+
+    .mdc-floating-label {
+      top: 15px;
+      left: 10px;
+      color: $tcGrey !important;
+      padding-left: 0;
+    }
+
+  }
+
+  .mdc-text-field-helper-text {
+    display: block;
+    position: absolute;
+    top: calc(100% + 10px);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    background-color: $cRed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+    white-space: nowrap;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    color: #eee !important;
+    opacity: 1;
+    display: inline-table;
+
+    &:after {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-bottom-color: $cRed;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+
+  }
+}

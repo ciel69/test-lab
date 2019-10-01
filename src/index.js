@@ -1,7 +1,12 @@
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import './assets/scss/custom-bootstrap.scss';
+import './assets/scss/fonts.scss';
 import './index.css';
-import App from './App';
+import App from './containers/App/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
